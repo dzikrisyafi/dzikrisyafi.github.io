@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+:root {
+    /* --midnight-color: #0F2239; */
+    --midnight-color: #0b2239;
+    --dark-blue-color: #000964;
+    --nile-blue-color: #113255;
+    --green-color: #2bc48a;
+    --white-color: #FFFFFF;
+
+    --green-hover-color: #3caf81;
+    --green-active-color: #008b71;
+
+    --footer-color: #08192b;
+
+    --text-black: #0b2239;
+    --text-gray-400: rgb(156 163 175);
+    --text-gray-500: rgb(107 114 128);
+    --text-gray-800: rgb(30 41 59);
+
+    /* ====== Transition ====== */
+    --trans-05: all 0.5s ease;
+    --trans-03: all 0.3s ease;
+    --trans-02: all 0.2s ease;
+}
+
+body {
+    min-height: 100%;
+    background-color: var(--white-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-midnight {
+    background-color: var(--midnight-color);
+}
+
+.text-black {
+    color: var(--text-black) !important;
+}
+
+.text-gray-400 {
+    color: var(--text-gray-400);
+}
+
+.text-gray-500 {
+    color: var(--text-gray-500);
+}
+
+.text-gray-600 {
+    color: var(--text-gray-600);
+}
+
+.btn-success-2 {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.btn-success-2:hover {
+    background-color: var(--green-hover-color);
+    color: var(--white-color);
+}
+
+.btn-success-2:active {
+    background-color: var(--green-active-color) !important;
+    color: var(--white-color) !important;
+}
+
+.btn-outline-secondary-2 {
+    border-width: 2px;
+    border-color: var(--nile-blue-color);
+    color: var(--nile-blue-color);
+    font-weight: 600;
+}
+
+.btn-outline-secondary-2:hover,
+.btn-outline-secondary-2:active {
+    background-color: var(--nile-blue-color) !important;
+    color: var(--white-color) !important;
+}
+
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+}
+
+.link-normal {
+    color: var(--green-active-color);
+    text-decoration: none;
+}
+
+.link-normal:hover {
+    color: var(--green-active-color);
+    text-decoration: underline;
+}
+
+/* ====== Navbar ====== */
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar .navbar-brand {
+    font-size: 24px;
+    color: var(--green-color);
+    border: 1px dashed var(--white-color);
+    border-radius: 50%;
+    padding: 2px 12px;
+}
+
+nav.navbar .nav-link:not(:last-child) {
+    margin-right: 15px;
+}
+
+/* ====== /Navbar ====== */
+
+/* ====== Jumbotron ====== */
+.jumbotron {
+    padding: 4rem 0;
+}
+
+.jumbotron h1,
+.jumbotron h2,
+.jumbotron h3 {
+    font-size: 38px;
+    text-align: center;
+}
+
+.jumbotron #profile-picture {
+    display: none;
+}
+
+.jumbotron p {
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ====== /Jumbotron ====== */
+
+/* ====== Footer ====== */
+footer {
+    background-color: var(--footer-color);
+    color: #869fb2;
+    padding: 50px 0;
+    font-size: 14px;
+    margin: 0;
+    border: none;
+}
+
+footer ul img {
+    width: 38px;
+}
+
+footer .nav-link {
+    font-size: 16px;
+}
+
+footer #footer-link .nav-link:hover {
+    color: #fff;
+}
+
+/* ====== /Footer ====== */
+
+/* For desktop */
+@media only screen and (min-width: 768px) {
+
+    .jumbotron h1,
+    .jumbotron h2,
+    .jumbotron h3 {
+        font-size: 58px;
+        text-align: left;
+    }
+
+    .jumbotron #profile-picture {
+        object-fit: cover;
+        object-position: center;
+        width: 500px;
+        display: block;
+    }
+
+    .jumbotron p {
+        text-align: left;
+    }
+
+}
+
+/* /For desktop */
